@@ -1,0 +1,9 @@
+{
+  "name": "akademiepw",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx playwright test tests/regress.spec.ts --headless --project=chromium",
+    "runAllTests": "npx playwright test --headless",
+  }
+}
