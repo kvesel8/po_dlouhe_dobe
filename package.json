@@ -1,9 +1,11 @@
 {
   "name": "akademiepw",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.3"
+  },
   "scripts": {
-    "test": "npx playwright test tests/regress.spec.ts --headless --project=chromium",
-    "runAllTests": "npx playwright test --headless",
+    "test": "npx playwright test tests/smokeTests.spec.ts"
   }
 }

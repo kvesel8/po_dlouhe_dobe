@@ -1,12 +1,19 @@
 # Local
 _deffer/
-.vscode/
-.DS_Store/
-node_modules/
+.vscode/ # konfigurační složka pro VS code - vlastní nastavení nepotřebujeme sdílet
+.DS_Store/ # něco co zase generuje macoS
+node_modules/ # moduly javascriptu nainstalované lokálně do projektu
 
 # Secret
 .env
 
 #Playwright
-playwright-report/
-test-results/
+playwright-report/ # Ukládání reportů z proběhlých testů, zbytečné posílat do GIT
+test-results/ #  Stejný důvod viz řádek výše
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
